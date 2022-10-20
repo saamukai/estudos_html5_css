@@ -6,20 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo_pt.png">
     <style>
-        .ancora {
-            position: relative;
-        }
-        .ancora:hover #oclin{
-            display:block;
-            visibility: visible;
-        }
-        #oclin {
-            transform: rotate(-15deg);
-            position:absolute;
-            left: 304px;
-            top: -385px;
-            visibility: hidden;
-        }
         #lulindo {
             border: 8px solid white;
             border-radius: 50px;
@@ -62,12 +48,12 @@
             top:1px;
         }
 
-
     </style>
 
-    <title>O Presidente</title>
+    <title>Seja Filiado</title>
 </head>
 <body style="background-color: rgb(255, 69, 69);">
+
     <p id="titulo" align="center">Luís Inácio Lula da Silva</p>
     <p id="slogan" align="center" style="color: white">O salvador da pátria</p>
     <br>
@@ -82,15 +68,36 @@
         </table>
         <br>
     </div>
-    <div align="center">
-        
-        <a class="ancora"><img id="lulindo" src="./img/lula_like.jpg" width="50%">
-        <img id="oclin" src="./img/olhapooclin.png" widht="200" height="200px"></a>
 
-        <p style="margin-top: 0; color: white;">
-            Pesquisa Eleitoral PoderData: Lula tem 52% dos votos válidos no 2º turno; Bolsonaro, 48% <br>
-            Veja em: <a href="https://www.cnnbrasil.com.br/politica/pesquisa-poderdata-lula-tem-52-dos-votos-validos-no-2o-turno-bolsonaro-48-2/" style="color:white;">CNN Brasil</a>
-        </p>
+    <div align="center">
+        <h1 style="color: white;">Filie-se ao PT</h1>
     </div>
+    <div align="left" style="color:white">
+        <br><br>
+        <p><b>Para se filiar preencha o formulário abaixo:</b></p>
+
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="nome">
+        <br><br><br>
+        <label for="sname">Sobrenome: </label>
+        <input type="text" id="sname">
+        <br><br><br>
+        <label for="numero">Telefone de contato: </label>
+        <input type="text" id="numero">
+        <br><br><br>
+        <label for="numero">Numero do Titulo de Eleitor: </label>
+        <input type="text" id="numero">
+        <br><br><br>
+
+        <button onclick="alertar()"> Enviar Pedido de Filiação </button>
+
+    </div>
+
+    <script>
+        function alertar(){
+            alert("Seus dados foram enviados")
+        }
+    </script>
+
 </body>
 </html>
