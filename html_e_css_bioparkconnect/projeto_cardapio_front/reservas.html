@@ -9,7 +9,32 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-
+    <style>
+    .reserva {
+        box-shadow:inset 0px -3px 3px 0px #ffff2b;
+        background:linear-gradient(to bottom, #ffef78 5%, #faca08 100%);
+        background-color:#ffef78;
+        border-radius:3px;
+        border:1px solid #000000;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family:Arial;
+        font-size:15px;
+        padding:9px 23px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #000000;
+    }
+    .reserva:hover {
+        background:linear-gradient(to bottom, #faca08 5%, #ffef78 100%);
+        background-color:#faca08;
+        color: black;
+    }
+    .reserva:active {
+        position:relative;
+        top:1px;
+    }
+    </style>
 </head>
 <body>
     <!-- NAV BAR-->
@@ -34,35 +59,18 @@
                         <div class="row justify-content-center">
                             <div class="boxpagina" align="center">
                                 <div class="conteudobox">
-                                    <h1>Eventos no Barzin do Hexa</h1>
-                                    <p align="justify">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur reprehenderit adipisci fuga, pariatur distinctio, nam ratione voluptates nihil cumque necessitatibus ut optio quas nemo dolorum officiis est veritatis animi!
-                                        Recusandae ducimus adipisci delectus ea iste voluptatum odio a accusamus dignissimos autem eius architecto tempore reiciendis corrupti similique nostrum, in deserunt. Odit a perferendis accusantium tenetur accusamus esse laborum recusandae.
-                                        Reiciendis quos inventore delectus velit suscipit consectetur minima voluptatem. henderit alias laudantium magni facere veniam eum voluptates aut dicta officiis eaque eligendi ducimus quibusdam tempore, asperiores quos.
-                                    </p>
-                                    <hr>
-                                    <div align="left">
-                                        <h4>Brasil vs Sérvia</h4>
-                                        <h6>24/11 as 16:00</h6>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                                        <hr>
-                                    </div>
-                                    <div align="left">
-                                        <h4>Brasil vs Suíça</h4>
-                                        <h6>28/11 as 13:00</h6>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                                        <hr>
-                                    </div>
-                                    <div align="left">
-                                        <h4>Brasil vs Camarões</h4>
-                                        <h6>02/11 as 16:00</h6>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                                        <hr>
-                                    </div>
-                                    <div align="left">
-                                        <h4>Comemoração do Hexa</h4>
-                                        <h6>18/12 as 16:00</h6>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                                    <h1>Faça sua reserva</h1>
+                                    <p>Abaixo responda as perguntas para solicitar sua reserva no barzin do hexa</p>
+                                    <div class="form" align="center">
+                                        <label><b>Para que data deseja marcar a reserva?</b></label><br>
+                                        <input id="data" type="date"><br><br>
+                                        <label><b>Para que horário?</b></label><br>
+                                        <input id="hora" type="time"><br><br>
+                                        <label><b>Para quantas pessoas?</b></label><br>
+                                        <input id="pessoas" type="number"><br><br>
+                                        <label><b>Deixe abaixo seu whatsapp</b></label><br>
+                                        <input id="numero" type="text"><br><br>
+                                        <a id="reservar" class="reserva">Solicitar Reserva</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,6 +100,7 @@
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
