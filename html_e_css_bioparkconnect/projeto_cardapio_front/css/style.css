@@ -1,43 +1,111 @@
+
+/* ESTILOS GLOBAIS  */
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
-    color: #bfc1c8;
-    font-family: "Roboto", "Open Sans", sans-serif;
-    background: #09090c;
+    background-color: #0e0e12;
 }
 
-.container-navbar {
-    background: rgb(22, 22, 21);
-    width: 100%;
-    height: 90px;
+/* ESTILOS DO CONTEUDO DA PÁGINA */
+main {
+    color:white;
+    min-height: auto;
+    background-image: url("../images/banner.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.boxpagina {
+    margin: 4%;
+    width: 90%;
+    height: auto;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.7vh;
+    border-radius: 40px;
+    background-color: #0e0e12;
+}
+
+/* ESTILOS DA NAV BAR */
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 15vh;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 0.8vh;
 }
-
-.logo-content {
-    width: 400px;
-    height: 90px;
+.logo {
+    font-size: 24px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
     display: flex;
-    flex-direction: row;
+}
+#imglogo {
+    margin-right: 3vh;
+}
+#textologo {
+    color: yellow;
+    margin-top: 1vh;
+    margin-left: 0.7vh;
+    text-decoration: none;
 }
 
-.logo-img {
-    width: 100px;
-    height: 90px;
-} .logo-img h1 {
-        margin-left: 25px;
-        margin-top: 15px;
-    }
+/* BOTÕES MENU */
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding-top: 2.5vh;
+}
 
-.logo-text {
-    width: 280px;
-    height: 90px;
-} .logo-text h1 {
-        margin-top: 30px;
-    } .logo-text a {
-            text-decoration: none;
-            color: yellow;
-        }
+.border-menu-item {
+    margin-right: 3vh;
+    letter-spacing: 0.3px;
+}
+
+.border-menu-item a{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 5vh;
+}
+
+.nav-list a{
+    margin-top: 5vh;
+    color: yellow;
+}
+
+.border-menu-item:hover{
+    border-style: solid;
+    border-width: 0.2vh;
+    border-radius: 10px;
+    color: yellow;
+    border-color: yellow;
+}
+
+/* ESTILOS DO RODAPÉ */
+footer {
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 10vh;
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 0.8vh;
+}
+
+.link-contato {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.link-contato img:hover {
+    width: 35px;
+    transition-duration: 0.3s;
+}
